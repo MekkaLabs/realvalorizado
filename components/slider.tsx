@@ -6,6 +6,7 @@ interface Props {
     initialOffsetX: number
     className: string
     contentWidth: number
+    children: ReactNode
 }
 
 const SliderContainer: React.FC<Props> = ({ children, initialOffsetX, className, contentWidth }) => {
