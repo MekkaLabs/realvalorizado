@@ -6,7 +6,7 @@ import styles from '../styles/carousel.module.css'
 
 interface ContextValue {
     embla: EmblaCarouselType | undefined
-    selectIndex: number
+    selectedIndex: number
 }
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
 
 export const CarouselContext = React.createContext<ContextValue>({
     embla: undefined,
-    selectIndex: -1
+    selectedIndex: -1
 })
 
 const Carousel: React.FC<Props> = ({ children, className }) => {
